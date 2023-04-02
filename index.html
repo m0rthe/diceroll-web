@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dice Roll</title>
+        <script type="text/javascript" src="scripts/diceroll.js"></script>
+    </head>
+    <body>
+        <!-- Navigation -->
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+            <li><a href="#welcome-section">About</a> </li>
+            <li><a href="#dice">Dice</a> </li>
+            <li><a href="#planned">Planned</a> </li>
+            </ul>
+        </nav>
+        <!--Welcome Section-->
+        <section id="welcome-section" class="welcome-section">
+            <h1>Roll a dice</h1>
+            <div class="logo">
+                <img src="https://cdn.pixabay.com/photo/2021/02/16/16/22/d-d-6021557_1280.png"
+                alt="d20 logo"></img>
+                </div>
+            <p>Choose from d4 to d100</p>
+        </section>
+        <!--Dice Section-->
+        <section id="dice" class="dice-section">
+            <h2>Which dice do you want to roll?</h2>
+            <br>
+            <!--button linked to js file and is executing the chosen function
+            m0rthe notes: 
+            -update functions with custom messages when rolling crit 1, crit 20
+            or crit 100.
+            -improve design
+            -look for possibilities to output answer in a blank field
+            -->
+            <p><button type="button" onclick="d4()">Roll a d4</button></p><br>
+            <p><button type="button" onclick="d6()">Roll a d6</button></p><br>
+            <p><button type="button" onclick="d8()">Roll a d8</button></p><br>
+            <p><button type="button" onclick="d10()">Roll a d10</button></p><br>
+            <p><button type="button" onclick="d12()">Roll a d12</button></p><br>
+            <p><button type="button" onclick="d20()">Roll a d20</button></p><br>
+            <p><button type="button" onclick="d100()">Roll a d100</button></p>
+        </section>
+        <!--Planned Section-->
+        <section id="planned" class="planned-section">
+            <div class="planned-section-header">
+                <h2>Planned</h2>
+                <p>For the future I plan to make a discord-bot version of diceroll, so that <br>commands
+                    can be used via chat to roll a dice. But for that, I need a <br>
+                    better understanding of node.js and discord.js. I have yet to complete<br>
+                    the introduction course for Javascript.
+                </p>
+            </div>
+        </section>
+    </body>
+</html>
