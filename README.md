@@ -1,2 +1,2 @@
 # diceroll-web
-My first small project to test things out
+Web version of dice roll. Click on a button to roll the dice of your choice.
