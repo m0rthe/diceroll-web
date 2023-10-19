@@ -134,7 +134,7 @@ function d8() {
   var result = Math.floor(1 + Math.random() * 8);
 
   // changing input field
-  document.getElementById("8").value = result;
+  document.getElementById("d8").value = result;
 
   // array with options
   var message_option = ["Critical failure!", "Critical success!", "Crit!", ""];
