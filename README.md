@@ -4,7 +4,7 @@
 
 # **Info**
 
-This a very simple web version of diceroll (discord bot planned)
+This a very simple web version of diceroll
 
 # **Live Preview**
 
