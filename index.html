@@ -11,13 +11,13 @@
         <!-- Navigation -->
         <nav id="navbar" class="nav">
             <ul class="nav-list">
-            <li><a href="#welcome-section">About</a> </li>
-            <li><a href="#dice">Dice</a> </li>
-            <li><a href="#discord">Discord.js</a> </li>
+            <li><a href="#home-section">Home</a> </li>
+            <li><a href="#dice">Roll</a> </li>
+            <li><a href="#discord">Discord.js Bot</a> </li>
             </ul>
         </nav>
-        <!--Welcome Section-->
-        <section id="welcome-section" class="welcome-section">
+        <!--home Section-->
+        <section id="home-section" class="home-section">
             <h1>Roll a dice</h1>
             <div class="logo">
                 <img src="https://cdn.pixabay.com/photo/2021/02/16/16/22/d-d-6021557_1280.png"
@@ -26,23 +26,40 @@
             <p>Choose from d4 to d100</p>
         </section>
         <!--Dice Section-->
-        <section id="dice" class="dice-section">
-            <h2>Which dice do you want to roll?</h2>
+        <section class="dice-section">
+        <fieldset id="dice">
+            <h2>Roll a dice!</h2>
             <br>
-            <!--button linked to js file and is executing the chosen function
+            <!--implemented: 
+                buttons linked to js file and is executing the chosen function
+                output answer in a blank field (input)
             m0rthe notes: 
             -update functions with custom messages when rolling crit 1, crit 20
             or crit 100.
             -improve design
-            -look for possibilities to output answer in a blank field
             -->
-            <p><button type="button" onclick="d4()">Roll a d4</button></p><br>
-            <p><button type="button" onclick="d6()">Roll a d6</button></p><br>
-            <p><button type="button" onclick="d8()">Roll a d8</button></p><br>
-            <p><button type="button" onclick="d10()">Roll a d10</button></p><br>
-            <p><button type="button" onclick="d12()">Roll a d12</button></p><br>
-            <p><button type="button" onclick="d20()">Roll a d20</button></p><br>
-            <p><button type="button" onclick="d100()">Roll a d100</button></p>
+            <div class="left">
+                <input class="dice_output" id="d4" size="4" min="1" type="number" value="" max="4">
+                <input class="dice_output" id="d6" size="4" min="1" type="number" value="" max="6">
+                <input class="dice_output" id="d8" size="4" min="1" type="number" value="" max="8">
+                <input class="dice_output" id="d10" size="4" min="1" type="number" value="" max="10">
+                <input class="dice_output" id="d12" size="4" min="1" type="number" value="" max="12">
+                <input class="dice_output" id="d20" size="4" min="1" type="number" value="" max="20">
+                <input class="dice_output" id="d100" size="4" min="1" type="number" value="" max="100">
+            </div>
+            <div class="right">
+                <button type="button" onclick="d4()">Roll d4</button></p><br>
+                <button type="button" onclick="d6()">Roll d6</button></p><br>
+                <button type="button" onclick="d8()">Roll d8</button></p><br>
+                <button type="button" onclick="d10()">Roll d10</button></p><br>
+                <button type="button" onclick="d12()">Roll d12</button></p><br>
+                <button type="button" onclick="d20()">Roll d20</button></p><br>
+                <button type="button" onclick="d100()">Roll d100</button></p>
+            </div>
+            </fieldset>
+            <div>
+                <input class="crit_output" id="if_crit" type="text" value="crit_message">
+                <button hidden type="button" onclick="test()">Test Button</button></div>
         </section>
         <!--discord Section-->
         <section id="discord" class="discord-section">
